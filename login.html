@@ -14,19 +14,19 @@
             <h1>Welcome to PostIt!</h1>
         </div>
         <div class="inputs">
-            <form>
+            <form id="loginForm" action="index.html">
                 <div class="login-div">
                     <label for="login">Email</label><br>
-                    <input type="text" id="login" name="login"><br>
+                    <input type="text" id="login" name="login" required><br>
                 </div>
                 <div class="password-div">
-                    <label for="password">Password</label><br>
-                    <input type="password" id="password" name="password"><br>
+                    <label for="password">Password</label><br />
+                    <input type="password" id="password" name="password" required><br />
+                    <button class="button" id="forgotPassword">Forgot your password?</button>
                 </div>
-                <div class="buttons">
-                    <button class="button">Login</button>
-                    <button class="button">Register</button>
-                </div>
+                <input type="submit" class="button" id="loginButton" value="Login" />
+                <label for="registerButton">Or make a new account:</label>
+                <input type="submit" class="button" id="registerButton" value="Register"/>
             </form>
         </div>
     </div>

@@ -15,15 +15,18 @@
             </div>
         </header>
         <div class="box">
-            <div class="text-area">
-                <p>Post body</p>
-                <input type="text">
-            </div>
-            <div class="file-area">
-                <p>Select file</p>
-                <input type="file" style="display: none">
-            </div>
-            <button id="submit-button" type="submit">Create Post</button>
+            <h1>Create a new post</h1>
+            <form action="index.html">
+                <div class="postText">
+                    <label for="text-area">Post body</label>
+                    <textarea id="text-area" rows="6" cols="80"></textarea>
+                </div>
+                <div class="postFile">
+                    <label for="fileSelect">Select file</label>
+                    <input type="file" id="fileSelect" class="button" />
+                </div>
+                <input type="submit" id="submit-button" class="button" value="Create Post" />
+            </form>
         </div>
     </div>
 </body>
