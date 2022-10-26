@@ -156,13 +156,13 @@ label + .button:hover {
     display: flex;
 }
 
-.name-avatar-div img {
+.avatar {
     height: 3rem;
     width: 3rem;
     border-radius: 45%;
 }
 
-.name-avatar-div p {
+.user-name {
     margin: 13px;
     color: black;
 }
