@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Post</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <div class="main">
@@ -13,10 +14,15 @@
             <div class="home-add-div">
                 <a href="index.html">Home</a>
             </div>
-            <div class="user">
-                <img src="Images/user.png" id="profilePic" alt="user">
+            <div class="dropdown">
+                <img src="Images/user.png" alt="user" onclick="showDropDownMenu()" onmouseover="hover(this);" onmouseout="unhover(this);" class="dropbtn">
             </div>
         </header>
+        <div id="Dropdown" class="dropdown-content">
+            <p>John Doe</p>
+            <p>john.doe@ut.ee</p>
+            <a href="login.html">logout</a>
+        </div>
         <div class="box">
             <h1>Create a new post</h1>
             <form action="index.html">

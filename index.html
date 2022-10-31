@@ -19,10 +19,15 @@
                 <a href="addPost.html">AddPost</a>
                 <a href="login.html">Login</a>
             </div>
-            <div class="user">
-                <img src="Images/user.png" id="profilePic" alt="user">
+            <div class="dropdown">
+                <img src="Images/user.png" alt="user" onclick="showDropDownMenu()" onmouseover="hover(this);" onmouseout="unhover(this);" class="dropbtn">
             </div>
         </header>
+        <div id="Dropdown" class="dropdown-content">
+            <p>John Doe</p>
+            <p>john.doe@ut.ee</p>
+            <a href="login.html">logout</a>
+        </div>
         <div class="content">
 
           <!--Posts are here-->
