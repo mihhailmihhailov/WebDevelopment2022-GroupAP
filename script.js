@@ -1,6 +1,8 @@
 
 $(function() {
-    $.get("https://api.npoint.io/ec93f3aee9868177ca5d", function(posts) {
+    // Online endpoint
+    //$.get("https://api.npoint.io/ec93f3aee9868177ca5d", function(posts) {
+    $.get("Data/posts.json", function(posts) {
         let postsdiv = $('<div class="posts">');
         for (post of posts){
             let article = $('<article class="post">');
@@ -9,8 +11,8 @@ $(function() {
             let name_avatar_div = $('<div class="name-avatar-div">');
             let post_lower_div = $('<div class="post-lower">');
 
-            let avatar = $('<img class="avatar">').attr('src', post.avatar);
-            let img = $('<img class="post">').attr('src', post.img);
+            let avatar = $('<img class="avatar" alt="avatar">').attr('src', post.avatar);
+            let img = $('<img class="post" alt="post image">').attr('src', post.img);
             let date = $('<p>').text(post.date_time);
             let user = $('<p>').text(post.user);
             let text = $('<p>').text(post.text);
