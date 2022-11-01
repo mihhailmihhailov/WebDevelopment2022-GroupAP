@@ -42,7 +42,8 @@ $(function() {
 function showDropDownMenu() {
     document.getElementById("Dropdown").classList.toggle("show");
 }
-window.onclick = function(event) {
+var button = document.getElementsByClassName("dropdown");
+button.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
