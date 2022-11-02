@@ -83,20 +83,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 button.className = "like";
                 button.textContent = "👍 Like!";
 
-                name_avatar_div.append(avatar)
-                name_avatar_div.append(user)
+                name_avatar_div.append(avatar);
+                name_avatar_div.append(user);
 
-                post_header.append(name_avatar_div)
-                post_header.append(date)
+                post_header.append(name_avatar_div);
+                post_header.append(date);
 
-                post_lower_div.append(image)
-                post_lower_div.append(text)
-                post_lower_div.append(button)
+                post_lower_div.append(image);
+                post_lower_div.append(text);
+                post_lower_div.append(button);
 
-                article.append(post_header)
-                article.append(post_lower_div)
+                article.append(post_header);
+                article.append(post_lower_div);
 
-                posts_div.append(article)
+                posts_div.append(article);
             }
             let content = document.getElementsByClassName("content")
             for (let content_div of content) {
@@ -112,11 +112,11 @@ document.addEventListener('DOMContentLoaded', function() {
             post_lower_div.className = "post-lower";
 
             let text = document.createElement("p");
-            text.textContent = "There are no posts to show at this time!"
+            text.textContent = "There are no posts to show at this time! Reason: " + err;
 
-            post_lower_div.append(text)
-            article.append(post_lower_div)
-            posts_div.append(article)
+            post_lower_div.append(text);
+            article.append(post_lower_div);
+            posts_div.append(article);
 
             let content = document.getElementsByClassName("content")
             for (let content_div of content) {
@@ -128,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function showDropDownMenu() {
     document.getElementById("Dropdown").classList.toggle("show");
 }
+
 let button = document.getElementsByClassName("dropdown");
 button.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
