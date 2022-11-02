@@ -128,7 +128,8 @@ document.addEventListener('DOMContentLoaded', function() {
 function showDropDownMenu() {
     document.getElementById("Dropdown").classList.toggle("show");
 }
-window.onclick = function(event) {
+var button = document.getElementsByClassName("dropdown");
+button.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         let dropdowns = document.getElementsByClassName("dropdown-content");
         for (let i = 0; i < dropdowns.length; i++) {
