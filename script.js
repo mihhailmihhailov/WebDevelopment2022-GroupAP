@@ -1,4 +1,4 @@
-/* JQuery-based implementation
+/* JQuery-based implementation (for preservation purposes)
 $(function() {
     // Online endpoint
     //$.get("https://api.npoint.io/ec93f3aee9868177ca5d", function(posts) {
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function showDropDownMenu() {
     document.getElementById("Dropdown").classList.toggle("show");
 }
-var button = document.getElementsByClassName("dropdown");
+let button = document.getElementsByClassName("dropdown");
 button.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         let dropdowns = document.getElementsByClassName("dropdown-content");
